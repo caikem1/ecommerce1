@@ -258,6 +258,7 @@ desired effect
         <!-- Optionally, you can add icons to the links -->
         <li><a href="/ecommercee/admin/users"><i class="fa fa-users"></i> <span>Usuários</span></a></li>
         <li><a href="/ecommercee/admin/categories"><i class="fa fa-shopping-basket"></i> <span>Categorias</span></a></li>
+        <li><a href="/ecommercee/admin/products"><i class="fa fa-shopping-basket"></i> <span>Caikes</span></a></li>
         <li class="treeview">
           <a href="#"><i class="fa fa-link"></i> <span>Multilevel</span>
             <span class="pull-right-container">
