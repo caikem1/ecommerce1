@@ -6,7 +6,7 @@
     Lista de Categorias
   </h1>
   <ol class="breadcrumb">
-    <li><a href="/ecommerce/admin"><i class="fa fa-dashboard"></i> Home</a></li>
+    <li><a href="/ecommercee/admin"><i class="fa fa-dashboard"></i> Home</a></li>
     <li class="active"><a href="/ecommercee/admin/categories">Categorias</a></li>
   </ol>
 </section>
