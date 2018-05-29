@@ -1,1 +1,1 @@
-<?php if(!class_exists('Rain\Tpl')){exit;}?><li><a href="/ecommercee/categories/2">Caike</a></li><li><a href="/ecommercee/categories/3">Caike Android</a></li><li><a href="/ecommercee/categories/4">Diego</a></li>
+<?php if(!class_exists('Rain\Tpl')){exit;}?><li><a href="/ecommercee/categories/2">Caike</a></li><li><a href="/ecommercee/categories/3">Caike Android</a></li><li><a href="/ecommercee/categories/4">Diego</a></li><li><a href="/ecommercee/categories/6">Teste</a></li>
