@@ -183,8 +183,8 @@ class User extends Model {
 	public static function getForgot($email, $inadmin = true)
 	{
 	     $sql = new Sql();
-	     $results = $sql->select("
-	         SELECT *
+	     $results = $sql->select(
+			 "SELECT *
 	         FROM tb_persons a
 	         INNER JOIN tb_users b USING(idperson)
 	         WHERE a.desemail = :email;
@@ -234,8 +234,8 @@ class User extends Model {
 	     $iv = mb_substr($result, 0, openssl_cipher_iv_length('aes-256-cbc'), '8bit');;
 	     $idrecovery = openssl_decrypt($code, 'aes-256-cbc', User::SECRET, 0, $iv);
 	     $sql = new Sql();
-	     $results = $sql->select("
-	         SELECT *
+	     $results = $sql->select(
+			 "SELECT *
 	         FROM tb_userspasswordsrecoveries a
 	         INNER JOIN tb_users b USING(iduser)
 	         INNER JOIN tb_persons c USING(idperson)

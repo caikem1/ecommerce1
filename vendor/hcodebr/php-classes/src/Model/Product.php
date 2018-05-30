@@ -14,6 +14,7 @@ class Product extends Model {
 		$sql = new Sql();
 
 		return $sql->select("SELECT * FROM tb_products ORDER BY desproduct");
+
 	}
 
 	public static function checkList($list)
@@ -27,6 +28,7 @@ class Product extends Model {
 		}
 
 		return $list;
+
 	}
 
 	public function save()
@@ -51,22 +53,27 @@ class Product extends Model {
 
 	public function get($idproduct)
 	{
+
 		$sql = new Sql();
 
 		$results = $sql->select("SELECT * FROM tb_products WHERE idproduct = :idproduct", [
 			':idproduct'=>$idproduct
+
 		]);
 
 		$this->setData($results[0]);
+
 	}
 
 	public function delete()
 	{
+		
 		$sql = new Sql();
 
 		$sql->query("DELETE FROM tb_products WHERE idproduct = :idproduct", [
 			':idproduct'=>$this->getidproduct()
 		]);
+
 	}
 
 	public function checkPhoto()
